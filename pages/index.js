@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Container fixed>
-        <h1>하이</h1>
+        <h1>JavascriptGame Demo</h1>
         <Table sx={{minWidth : 650}} aria-label="demo-list">
           <TableHead>
             <TableRow>
