@@ -1,0 +1,276 @@
+:root {
+    --main-bg-color: forestgreen;
+    /* 56A902 */
+    --main-uu-color: #d1e7b5;
+    --main-font-color: #75D701;
+    --main-font-game-color: black;
+    --main-gg-color: forestgreen;
+    --main-uu-bar-color: #3ac569;
+    --main-uu-bar2-color: #56A902;
+}
+body{
+    margin: 0;
+    padding: 0; /*모든 콘텐츠가 인터넷 창에 딱 붙게*/
+}
+h2{margin: 0;}
+header{width: 100%; height: 100px; background-color: white}
+header #logo{
+    padding-top: 15px;
+    width: 20%; height: 80px; 
+    text-align: center; line-height: 100px;
+    /*줄간격값과 높이값을 동일하게 주면 세로 가운데 정렬된다(콘텐츠가 한줄일때만 가능*/ 
+    float: left;/*이미지 배치 효육적으로 하기 위한 속성*/ 
+    margin: 0;/*붕뜨게 하는 margin을 없애야함*/  
+    background-color: white
+}
+#logo img{
+    width: 210px; height: 60px;
+    text-align: center;
+    /*줄간격값과 높이값을 동일하게 주면 세로 가운데 정렬된다(콘텐츠가 한줄일때만 가능*/ 
+    margin: 0;/*붕뜨게 하는 margin을 없애야함*/  
+    background-color: white
+}
+
+#nav1{float: left; width: 80%; height: 100px; 
+    background-color: white
+}
+#nav2{float: left; width: 80%; height: 40px; 
+    background-color: var(--main-bg-color);
+}
+header nav ul{ padding: 0; 
+    margin: 0;
+    list-style: none; /* 리스트 목록 (네모) 없게*/ 
+    width: 80%; height: 100%; 
+    background-color: white
+}
+#nav2 ul{ padding: 0; 
+    padding-left: 50%;
+    list-style: none; /* 리스트 목록 (네모) 없게*/ 
+    width: 25%; height: 100%; 
+    background-color: var(--main-bg-color)
+}
+#nav1 ul li{width: 25%; line-height: 90px; height: 100%;
+    float: left; /*세로형인 리스트 영역을 가로로 바꿔줌*/ 
+    text-align: center; /*li영역 가운데 정렬*/
+}
+#nav2 ul li{width: 50%; line-height: 37px; height: 100%;
+    float: left; /*세로형인 리스트 영역을 가로로 바꿔줌*/ 
+    text-align: center; /*li영역 가운데 정렬*/}
+    
+header #nav1 ul li a{text-decoration: none;/*밑줄삭제*/ 
+    font-size: 24px; color: black;
+}
+header #nav2 ul li a{text-decoration: none;/*밑줄삭제*/ 
+    font-size: 18px; color: var(--main-font-color);
+}
+
+.part1{
+    position: relative;
+}
+
+/* 정지, 플레이 버튼 */
+.play {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    bottom: 1%;
+    right: 2%;
+}
+
+/* 급식정보표시 */
+#TD {
+    background-color: var(--main-uu-bar-color);
+    width : 20%;
+    height : 340px;
+    margin : 25px;
+    float : right;
+}
+#TD h1{
+    margin: 2px;
+}
+#TD p{
+    margin: 5px;
+}
+
+#TD #btn{
+    position: relative;
+}
+
+/* 학과활동 게임 */
+#game {
+    background-color: var(--main-uu-color);
+    height : 700px; 
+    width: 99.9%;
+}
+#game div a{
+    display: block;
+}
+#game div{
+
+    width: 25%;
+    display: inline-block;
+}
+#game h2{
+    color: var(--main-font-game-color);
+}
+#game #gameHeader{
+    width:100%;
+    float: top;
+}
+#game div img{
+    width:80%;
+    height: 50%;
+}
+
+#why {
+    background-color: var(--main-uu-bar-color);
+    width : 68%;
+    height : 300px;
+    margin-top: 25px;
+    margin-left: 100px;
+    float : left;
+}
+
+#game h1{
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    /* margin-left: 20px; */
+    font-size: 20px;
+    color: var(--main-font-color);  
+    background-color: var(--main-bg-color);
+    font-size: 25px;
+}
+.fo1 , .fo2{
+    text-align: center;
+}
+#APheader h1{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: var(--main-font-color);
+}
+#APheader{
+    background-color: var(--main-gg-color);
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    height: 35px;
+}
+#expheader{
+    background-color : var(--main-bg-color);
+    margin: 20px;
+    padding: 10px;
+    width: 10%;
+    height: 35px;
+}
+#expheader h1{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: var(--main-font-color);
+}
+#experience{
+    background-color: var(--main-uu-color);
+    height: 100%;
+}
+#ecperience #rightImg{
+    float: top;
+    width: 50%;
+    height: 50%;
+    background-color: var(--main-font-color);
+}
+#ecperience #leftImg{
+    float: bottom;
+    width: 50%;
+    height: 50%;
+}
+#experience img{
+    width: 20%;
+    height: 25%;
+}
+#photo{
+    margin-bottom: 40px;
+}
+#Output{
+    background-color: white;
+    width : 60%;
+    height : 300px;
+    margin : 25px;
+    margin-left: 20%;
+    border : 1px solid black;
+}
+#activity h1{
+    margin: 7px;
+}
+#activity{
+    background-color: var(--main-uu-bar2-color);
+}
+#ActivityPhotography{
+    background-color: var(--main-uu-bar2-color);
+}
+#hhh{
+    height: 80px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: var(--main-uu-color);
+}
+#hhh h1{
+    color: black;
+}
+#hhh h2{
+    color: black;
+}
+py-terminal{
+    display: none;
+}
+#htt{
+    padding: 0;
+    margin: 0;
+}
+.py-repl-output{
+    background-color: var(--main-font-color);
+}
+/*     ---------------------------------------------------------------------------------------------------------------*/
+section{width: 100%; height: 500px; background-color: var(--main-bg-color);}
+
+section .part1, section .part2, section .part3, section .part4{
+    width: 100%; float: left;/*가로정렬*/ 
+    text-align: center;
+}
+
+section .part1{background-color: black;}
+section .part2{background-color: var(--main-uu-color);}
+section .part3{background-color:  var(--main-uu-bar2-color);}
+section .part4{background-color: var(--main-uu-color);}
+/*     ---------------------------------------------------------------------------------------------------------------*/
+footer{clear: both;/*float초기화 : float의 영향을 받지 않겠다*/ 
+    height: 100px; background-color: #999; 
+    padding-top: 10px; font-size: 12px;
+}
+footer div{width: 70%; height: 30px; 
+    background-color: lightyellow; margin: auto; 
+    margin-bottom: 10px; padding-left: 30px; 
+    line-height: 30px;
+}
+
+@media  (max-width: 1050px) {
+    #TD{
+        font-size: 13.5px;
+    }
+    #logo img{
+        width: 101%; height:75%;
+        text-align: center;
+        /*줄간격값과 높이값을 동일하게 주면 세로 가운데 정렬된다(콘텐츠가 한줄일때만 가능*/ 
+        margin: 0;/*붕뜨게 하는 margin을 없애야함*/  
+        background-color: white
+    }
+    #game h1{
+        font-size: 15px;
+    }
+}
