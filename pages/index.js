@@ -11,7 +11,6 @@ const rows = [
   createData('dudu','https://github.com/baqnngg/Javascript_Study/tree/main/%EB%91%90%EB%8D%94%EC%A7%80%20%EC%9E%A1%EA%B8%B0','/dudu'),
   createData('memory','https://github.com/baqnngg/Javascript_Study/tree/main/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B2%8C%EC%9E%84','/memory'),
   createData('snake','https://github.com/baqnngg/Javascript_Study/tree/main/%EC%8A%A4%EB%84%A4%EC%9D%B4%ED%81%AC%EA%B2%8C%EC%9E%84','/snake'),
-  createData('department','https://github.com/baqnngg/Department-site','/department')
 ]
 
 export default function Home() {
